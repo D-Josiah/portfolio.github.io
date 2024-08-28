@@ -1,0 +1,225 @@
+.projects{
+    padding: 4%;
+    width: 100%;
+
+    .cards-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        justify-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        .card{
+            width: 80%;
+           
+            height: 320px;
+            background-color: $secondary-color;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+          
+          
+            .title{
+                display: flex;
+                justify-content: center;
+           
+                align-items: center;
+                gap:3px;
+                text-align: center;
+                padding-bottom: 12%;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+                p{
+             
+                    font-size: larger;
+                
+                 
+                }
+            }
+        }
+        .stack-used{
+            display: flex;
+            gap: 1px;
+            img{
+                width: 40px;
+            }
+        }
+        .description{
+            padding-bottom: 5%;
+            height: 60px;
+          
+         
+        }
+        .view-btn{
+            padding-top: 24%;
+            width: 120px;
+        }
+    }
+    h2{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Styles for iPads in portrait mode (width between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cards-wrapper {
+
+      
+        .card {
+            width: 100% !important; 
+            .display{
+                width: 70px!important; 
+                height: 60px!important; 
+             
+            }
+        }
+
+    
+        .tech{
+            width: 40px!important; 
+        }
+
+        .view-btn{
+            width: 100px !important;
+        }
+ 
+    }
+
+    .description{
+        font-size: 14px !important;
+        padding-bottom: 40px!important;
+        height: 80px !important;
+  
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .projects{
+        padding: 10%!important;
+        height: max-content !important;
+    }  
+    .cards-wrapper {
+        
+        grid-template-columns: 1fr !important;
+        gap: 2%!important;
+      
+        .card {
+            width: 80% !important; 
+            .display{
+                width: 70px!important; 
+                height: 60px!important; 
+             
+            }
+        }
+
+    
+        .tech{
+            width: 50px!important; 
+        }
+
+        .view-btn{
+            width: 100px !important;
+        }
+ 
+    }
+
+    .description{
+        font-size: 16px !important;
+        padding-bottom: 30px!important;
+        height: 70px !important;
+  
+    }
+}
+
+@media (min-width: 548px) and (max-width: 576px) {
+    .projects{
+        padding: 10%!important;
+        height: max-content !important;
+    }  
+    .cards-wrapper {
+        
+        grid-template-columns: 1fr !important;
+        gap: 2%!important;
+      
+        .card {
+            width: 100% !important; 
+            height: 260px !important;
+            .display{
+                width: 60px!important; 
+                height: 50px!important; 
+             
+            }
+        }
+
+    
+        .tech{
+            width: 30px!important; 
+        }
+
+        .view-btn{
+            width: 80px !important;
+        }
+ 
+    }
+
+    .description{
+        font-size: 16px !important;
+        padding-bottom: 30px!important;
+        height: 60px !important;
+  
+    }
+
+    .title{
+        font-size: 16!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 548px) {
+    .projects{
+        padding: 10%!important;
+        height: max-content !important;
+    }  
+    .cards-wrapper {
+        
+        grid-template-columns: 1fr !important;
+        gap: 2%!important;
+      
+        .card {
+            width: 100% !important; 
+            height: 240px !important;
+            .display{
+                width: 40px!important; 
+                height: 30px!important; 
+             
+            }
+        }
+
+    
+        .tech{
+            width: 25px!important; 
+        }
+
+        .view-btn{
+            width: 80px !important;
+        }
+ 
+    }
+
+    .description{
+        font-size: 12px !important;
+        padding-bottom: 30px!important;
+        height: 70px !important;
+  
+    }
+
+    .title{
+        font-size: 16!important;
+    }
+}

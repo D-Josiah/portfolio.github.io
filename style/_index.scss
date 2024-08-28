@@ -1,0 +1,238 @@
+body{
+    width: 100%;
+    height: fit-content;
+    font-family: $norwester;
+    color: white;
+    .padding{
+        
+        background-color: $primary-color;
+        margin: 1%;
+        padding: 4%;
+       
+    }
+    .about{
+        width: 100%;
+        height: 100vh;
+    
+
+    }
+   
+    nav{
+        ul{
+            display: flex;
+            gap: 5%;
+            list-style-type: none;
+            font-size: larger;
+        
+          
+            a{
+                color: white;
+                text-decoration: none;
+
+                
+            }
+            a:hover {
+                font-size:x-large
+            }
+            .name{
+                margin-left: auto;
+                padding-right: 3%;
+            }
+    
+        }
+     
+     
+ 
+    }
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        background-color: $secondary-color;
+     
+        border-radius: 10px;
+        height: 80vh;
+
+        .left{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 140px;
+            }
+        }
+
+        .right{
+
+            width: 50%;
+            display: flex;
+            justify-content: center;
+           img{
+                width: 350px;
+               
+           }
+        }
+        
+
+    }
+    .bot{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+
+/* Styles for iPads in portrait mode (width between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {    
+      .top{
+        .left{
+             .greet{
+            font-size: 100px;
+           }
+           .josiah{
+            font-size: 20px;
+           }
+        }
+
+        .right{
+    
+           .profile{
+            width: 250px !important;
+           }
+        }
+    }
+    .bot{
+      
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    .top{
+        .left{
+             .greet{
+            font-size: 70px;
+           }
+           .josiah{
+            font-size: 15px;
+           }
+        }
+
+        .right{
+    
+           .profile{
+            width: 200px !important;
+           }
+        }
+    }
+    .bot{
+      
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 548px) and (max-width: 576px) {
+    .top{
+
+        height: 40vh !important;
+    }
+
+    .about{
+   
+        height: 60vh !important;
+    }
+
+    nav{
+        li{
+         a{
+            font-size: 14px;
+         }
+
+        }
+     
+    }
+
+    .padding{
+        padding: 2%!important;
+    }
+  
+    .top{
+        .left{
+             .greet{
+            font-size: 40px;
+           }
+           .josiah{
+            font-size: 15px;
+           }
+        }
+
+        .right{
+    
+           .profile{
+            width: 140px !important;
+           }
+        }
+    }
+    .bot{
+      
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 548px) {
+    .top{
+   
+        height: 30vh !important;
+
+    }
+
+    .about{
+   
+        height: 45vh !important;
+
+    }
+
+    nav{
+        li{
+         a{
+            font-size: 10px;
+         }
+
+        }
+     
+    }
+
+    .padding{
+        padding: 2%!important;
+    }
+  
+    .top{
+        .left{
+             .greet{
+            font-size: 38px;
+           }
+           .josiah{
+            font-size: 8px;
+           }
+        }
+
+        .right{
+    
+           .profile{
+            width: 100px !important;
+           }
+        }
+    }
+    .bot{
+      
+        font-size: 8px;
+    }
+}
+

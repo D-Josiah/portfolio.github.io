@@ -1,0 +1,98 @@
+.sponsors-body {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+.sponsors-main {
+  height: 90vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+
+}
+.card {
+  width: 80%;
+  height: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+.front {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  color: $secondary-color;
+  background-color: $primary-color;
+  border-radius: 50px 50px 0 0; 
+
+  .wrapper{
+    display: flex;
+    gap: 10%;
+   
+  }
+  .bottom{
+    display: flex;
+    gap: 10%;
+    div{
+        width: 50vh;
+        text-align: center;
+    }
+  }
+  li {
+    padding: 5px;
+    font-size: large;
+  }
+  p{
+    padding: 5px;
+    font-size: large;
+  }
+  h1{
+    color: $secondary-color;
+    padding: 10px 30px;
+    border-radius: 50px;
+  }
+}
+
+.back {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 80vh;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  color: $secondary-color;
+  background-color: $primary-color;
+  border-radius: 50px 50px 0 0; 
+  li {
+    padding: 5px;
+    font-size: larger;
+  }
+  h1{
+ 
+    color: $secondary-color;
+    padding: 10px 30px;
+    border-radius: 50px;
+
+  }
+}
