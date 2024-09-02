@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
@@ -23,13 +24,53 @@
         .message p {
             font-size: 1.2em;
         }
+
+        .button{
+            margin: 30px;
+            background-color: white;
+            color:#FF5943;
+            width: 100px;
+            height: 30px;
+            font-weight: bold;
+            border-radius: 15px;
+            border-style: none;
+        }
+        .button:hover{
+            background-color: #FF6450;
+            color: white;
+        }
+        .back{
+            display: flex;
+            width: 100%;
+            justify-content:end;
+        }
+        .sosyo{
+        width: 80%;
+       }
+
+    @media (min-width: 320px) and (max-width: 560px) {
+       .text{
+        font-size: 15px !important;
+
+       }
+       .button{
+        width: 80px;
+        font-size: 12px;
+       }
+     
+    }
     </style>
 </head>
+<div class="back">
+    <a href="index.html"><button class="button">BACK</button></a>
+</div>
 <body>
+   
     <div class="message">
-        <h1>We're Still Building! 🚧</h1>
-        <p>Thanks for visiting! We're hard at work on new features and improvements. Check back soon for updates!</p>
-        <img src="images/sosyo.png">
+        <h1 class="text">We're Still Building! 🚧</h1>
+        <p class="text">Thanks for visiting! We're hard at work on new features and improvements. </p>
+        <p class="text">Check back soon for updates!</p>
+        <img class="sosyo" src="images/sosyo.png">
     </div>
 </body>
 </html>
