@@ -30,13 +30,52 @@
             width: 100px;
         }
         .mock{
-            width: 80vh;
+            width: 80%;
         }
+
+        .button{
+            margin: 30px;
+            background-color: white;
+            color:#FF5943;
+            width: 100px;
+            height: 30px;
+            font-weight: bold;
+            border-radius: 15px;
+            border-style: none;
+        }
+        .button:hover{
+            background-color: #FF6450;
+            color: white;
+        }
+        .back{
+            display: flex;
+            width: 100%;
+            justify-content:end;
+        }
+        .sosyo{
+        width: 80%;
+       }
+
+    @media (min-width: 320px) and (max-width: 560px) {
+       .text{
+        font-size: 15px !important;
+
+       }
+       .button{
+        width: 80px;
+        font-size: 12px;
+       }
+     
+     
+    }
     </style>
 </head>
+<div class="back">
+    <a href="index.html"><button class="button">BACK</button></a>
+</div>
 <body>
     <div class="message">
-        <h1>Curious about how this is built? 🤓 Check out the source code on GitHub! </h1>
+        <h1 class="text">Curious about how this was built? 🤓 Check out the source code on GitHub! </h1>
 
    </div>
    <img class="mock" src="images/mock.png">
